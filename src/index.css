@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1518384401463-d3876163c195?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: #c5f5ff;
+  background-image: linear-gradient(359deg, #c5f5ff 0%, #ffffe4 100%);
+ */
+  font-family: "Montserrat Alternates", sans-serif;
+}

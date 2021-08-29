@@ -1,0 +1,49 @@
+.item {
+  text-align: left;
+  background-color: #ecfff1;
+  color: black;
+  margin: 2px auto;
+  width: 50%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border: 1px solid grey;
+}
+
+.item h2 {
+  font-size: 18px;
+  padding: 10px;
+  width: 90%;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.icon :hover {
+  color: #5fbfff;
+  border-radius: 10px;
+}
+
+.icon :active {
+  color: #5fbfff;
+  border-radius: 10px;
+}
+
+.MuiSvgIcon-root {
+  margin: 0px 5px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=showstyle.css.map */
