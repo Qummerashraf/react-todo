@@ -6,7 +6,7 @@ const getLocalItems = () => {
 
   let list = localStorage.getItem('lists');
   if (list===undefined || list===null) {
-    return (list = JSON.parse(localStorage.getItem('lists')));
+    return [];
   }
   else {
     return (list = JSON.parse(localStorage.getItem('lists')));
