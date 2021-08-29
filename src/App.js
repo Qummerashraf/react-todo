@@ -6,10 +6,10 @@ const getLocalItems = () => {
 
   let list = localStorage.getItem('lists');
   if (list===undefined) {
-    return (list = JSON.parse(localStorage.getItem('lists')))
+    return [];
   }
   else {
-    return []
+    return (list = JSON.parse(localStorage.getItem('lists')));
   }
 }
 
