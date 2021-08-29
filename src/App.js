@@ -8,8 +8,11 @@ const getLocalItems = () => {
   if (list===undefined || list===null) {
     return (list = JSON.parse(localStorage.getItem('lists')));
   }
-  else {
-    return [];
+  else if(list) {
+    return (list = JSON.parse(localStorage.getItem('lists')));
+  }
+  else{
+  return []
   }
 }
 
