@@ -9,7 +9,7 @@ const getLocalItems = () => {
     return (list = JSON.parse(localStorage.getItem('lists')));
   }
   else {
-    return [];
+    return (list = JSON.parse(localStorage.getItem('lists')));
   }
 }
 
