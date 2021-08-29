@@ -2,17 +2,7 @@ import { useEffect, useState } from "react";
 import Add from "./additem/Add";
 import Show from "./show/Show";
 
- const getLocalItems = () => {
-  let list = localStorage.getItem('lists');
-  if (list != null) {
-    try {
-      return JSON.parse(list);
-    } catch (error) {
-      console.error("Not a JSON response")
-    }
-
-  }
-}
+  
 
 function App() {
 
@@ -72,7 +62,17 @@ function App() {
     localStorage.setItem('lists', JSON.stringify(list))
   }, [list]);
 
+const getLocalItems = () => {
+  let list = localStorage.getItem('lists');
+  if (list != null) {
+    try {
+      return JSON.parse(list);
+    } catch (error) {
+      console.error("Not a JSON response")
+    }
 
+  }
+}
 
   const handlemode = () => {
     if (bg === "aliceblue") {
