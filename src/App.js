@@ -5,7 +5,7 @@ import Show from "./show/Show";
 const getLocalItems = () => {
 
   let list = localStorage.getItem('lists');
-  if (list===undefined) {
+  if (list===undefined || list===null) {
     return [];
   }
   else {
