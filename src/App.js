@@ -4,7 +4,7 @@ import Show from "./show/Show";
 
  const getLocalItems = () => {
   let list = localStorage.getItem('lists');
-  if (list) {
+  if (list != null) {
     try {
       return JSON.parse(list);
     } catch (error) {
