@@ -2,16 +2,19 @@ import { useEffect, useState } from "react";
 import Add from "./additem/Add";
 import Show from "./show/Show";
 
-const getLocalItems = () => {
+ 
+
+function App() {
+
+  const [input, setInput] = useState(' ');
+  
+  const getLocalItems = () => {
   let list = localStorage.getItem('lists');
   if (list) {
     return JSON.parse(localStorage.getItem('lists'));
   }
 }
-
-function App() {
-
-  const [input, setInput] = useState(' ');
+  
   const [list, setList] = useState(getLocalItems())
   const [editItem, setEditItem] = useState(null);
   const [toggleSubmit, settoggleSubmit] = useState(true);
