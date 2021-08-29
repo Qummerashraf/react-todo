@@ -11,7 +11,7 @@ function Show(props) {
       <Box>
         <Container>
           <Grid container alignItems="center">
-            {list.length
+            {list?.length
               ? list.map((item) => (
                   <Grid
                     item
