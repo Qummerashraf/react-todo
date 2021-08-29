@@ -33,7 +33,7 @@ function Show(props) {
                     </div>
                   </Grid>
                 ))
-              : ""}
+              : " "}
           </Grid>
         </Container>
       </Box>
