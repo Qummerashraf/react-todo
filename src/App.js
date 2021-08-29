@@ -6,7 +6,7 @@ import Show from "./show/Show";
   let list = localStorage.getItem('lists');
   if (list) {
     try {
-      return JSON.parse(localStorage.getItem('lists'));
+      return JSON.parse(list);
     } catch (error) {
       console.error("Not a JSON response")
     }
